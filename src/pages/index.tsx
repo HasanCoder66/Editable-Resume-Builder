@@ -12,7 +12,7 @@ const Home: React.FC = () => {
           <FormSection />
         </div>
         <div className="preview-container">
-          <ResumePreview data='hasan'/>
+          <ResumePreview data={resumeData}/>
         </div>
       </div>
     </>
