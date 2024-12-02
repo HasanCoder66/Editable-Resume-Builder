@@ -1,14 +1,18 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../redux/store";
+
 
 const ResumePreview: React.FC<{ data: any }> = ({ data }) => {
-  console.log(data)
+  const resumeData = useSelector((state: RootState) => state.resume.data);
+  console.log(resumeData)
   return (
     <div className="resume-preview" style={{ fontFamily: "Arial, sans-serif", color: "#333" }}>
       {/* Header Section */}
       <div style={{ display: "flex", alignItems: "center", borderBottom: "2px solid #ddd", paddingBottom: "10px" }}>
         {data?.photo && (
           <img
-            src={data?.photo}
+          src={data?.photo ? data.photo : "https://avatars.githubusercontent.com/u/140997677?v=4"}
             alt="Profile"
             style={{
               width: "100px",
