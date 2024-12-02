@@ -4,15 +4,16 @@ import ResumePreview from "@/components/ResumePreview";
 import Header from "@/components/Header";
 
 const Home: React.FC = () => {
+  const [resumeData, setResumeData] = useState<any>({});
   return (
     <>
       <Header />
       <div className="container">
         <div className="form-container">
-          <FormSection />
+        <FormSection setResumeData={setResumeData} />
         </div>
         <div className="preview-container">
-          <ResumePreview data={resumeData}/>
+        <ResumePreview data={resumeData} />
         </div>
       </div>
     </>

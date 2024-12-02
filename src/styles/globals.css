@@ -5,14 +5,14 @@
 }
 
 .form-container {
-  flex: 0 0 45%; /* 45% of the container's width */
+  flex: 0 0 45%; 
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .preview-container {
-  flex: 0 0 45%; /* 45% of the container's width */
+  flex: 0 0 45%; 
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
